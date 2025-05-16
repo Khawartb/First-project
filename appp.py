@@ -75,8 +75,8 @@ def set_background(image_file):
         st.error(f"Error setting background: {e}")
 
 # Page setup
-st.set_page_config(page_title="YSDS - Yashfeen Skills Development Services", layout="wide", page_icon="💡")
-st.title("🎓Welcome to **YSDS**")
+st.set_page_config(page_title="YSDS - Yashfeen Skills Development Center", layout="wide", page_icon="💡")
+st.title("🎓Welcome to **YSDC**")
 
 # Load API key securely from .streamlit/secrets.toml
 google_api_key = st.secrets.get("GOOGLE_API_KEY")
@@ -590,7 +590,7 @@ with st.sidebar:
     st.markdown(
         """
         <div style='text-align: center;'>
-            <h4><b> 🌟Yashfeen Skills Development🌟 </b>\n\n Services \n\n----------------- \n\n <em>Empowering youth through practical tech skills</em> </h4>
+            <h4><b> 🌟Yashfeen Skills Development🌟 </b>\n\n Center \n\n----------------- \n\n <em>Empowering youth through practical tech skills</em> </h4>
         </div>
         """,
         unsafe_allow_html=True
@@ -673,7 +673,7 @@ st.markdown(assistant_chat_css(logo_path), unsafe_allow_html=True)
 # Initialize session state
 if "messages" not in st.session_state:
     st.session_state.messages = [
-        {"role": "assistant", "content": "👋Hi! I'm Ali, Your informational guide from **Yashfeen Skills Development Center**. Ask me anything about courses, fees, or admissions!☺️"}
+        {"role": "assistant", "content": "HI👋! I'm Ali, Your informational guide for and from **Yashfeen Skills Development Center**. Ask me about courses, fees, admissions or anything related to YSDC!☺️"}
     ]
 
 # Display message history
@@ -682,7 +682,7 @@ for msg in st.session_state.messages:
         st.markdown(msg["content"])
 
 # Input field
-user_input = st.chat_input("Ask something about Yashfeen Education System 🤔...")
+user_input = st.chat_input("Ask me anything about YSDC 🤔...")
 if user_input:
     st.chat_message("user").markdown(user_input)
     st.session_state.messages.append({"role": "user", "content": user_input})
