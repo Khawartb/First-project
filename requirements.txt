@@ -1,20 +1,7 @@
-# Streamlit for frontend
 streamlit
-
-# LangChain for LLM orchestration
 langchain
-
-# Google Generative AI (Gemini)
 google-generativeai
-
-# To manage environment variables securely
 python-dotenv
-
-# For LLM output formatting (optional but helpful)
 pydantic
-
-# Utilities (optional but common)
 requests
-
-# For handling audio/image if needed later
 Pillow
