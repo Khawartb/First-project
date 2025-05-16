@@ -1,5 +1,0 @@
-streamlit 
-langchain_google_genai 
-langchain.chains 
-langchain.memory 
-langchain_core.prompts 
